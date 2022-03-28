@@ -1,1 +1,1 @@
-window.location.href = `http://www.youtube.com/v/VIDEO_IDENTIFIER`;
+window.location.href = `youtube://www.youtube.com/user/channelname`;
