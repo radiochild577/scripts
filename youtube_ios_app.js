@@ -1,5 +1,5 @@
 function YouTubeGetID(url){
-  var $ID = '';
+  var ID = '';
   url = url.replace(/(>|<)/gi,'').split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
   if(url[2] !== undefined) {
     ID = url[2].split(/[^0-9a-z_\-]/i);
@@ -8,6 +8,6 @@ function YouTubeGetID(url){
   else {
     ID = url;
   }
-    return $ID;
+    return ID;
   window.location.href = 'youtube://watch?v=$ID';
 }
