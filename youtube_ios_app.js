@@ -1,16 +1,7 @@
-function YouTubeGetID(url){
-  var %ID = '';
-  url =
-url.replace(/(>|<)/gi,'').split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
-  if(url[2] !==
-undefined) {
-    ID =
-url[2].split(/[^0-9a-z_\-]/i);
-    ID = ID[0];
-  }
-  else {
-    ID = url;
-  }
-    return %ID;
-  window.location.href = `youtube://${ID}`;
+<script type="text/javascript">
+function youtube_parser(url){
+    var regExp = /^https?\:\/\/(?:www\.youtube(?:\-nocookie)?\.com\/|m\.youtube\.com\/|youtube\.com\/)?(?:ytscreeningroom\?vi?=|youtu\.be\/|vi?\/|user\/.+\/u\/\w{1,2}\/|embed\/|watch\?(?:.*\&)?vi?=|\&vi?=|\?(?:.*\&)?vi?=)([^#\&\?\n\/<>"']*)/i;
+    var match = url.match(regExp);
+    return (match && match[1].length==11)? match[1] : false;
 }
+</script>
