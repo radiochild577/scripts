@@ -1,1 +1,1 @@
-window.location.href = `youtube://%m`;
+window.location.href = `youtube://${window.location.host}${window.location.pathname}`;
