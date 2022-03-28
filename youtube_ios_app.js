@@ -11,6 +11,6 @@ function YouTubeGetID(url){
     return ID;
 }
 
-function pass {
+function {
   window.location.href = 'youtube://watch?v='ID;
 }
