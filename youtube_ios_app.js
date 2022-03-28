@@ -1,3 +1,4 @@
-results = url.match('(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})')
-videoId = results[1]
-window.location.href = `youtube://${videoId}`;
+var url = window.location.toString();
+const str = url;
+const newStr = str.replace('https://www.youtube.com/watch?v=', 'youtube://');
+console.log(newStr);
