@@ -1,13 +1,16 @@
 function YouTubeGetID(url){
-  var ID = '';
-  url = url.replace(/(>|<)/gi,'').split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
-  if(url[2] !== undefined) {
-    ID = url[2].split(/[^0-9a-z_\-]/i);
+  var %ID = '';
+  url =
+url.replace(/(>|<)/gi,'').split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
+  if(url[2] !==
+undefined) {
+    ID =
+url[2].split(/[^0-9a-z_\-]/i);
     ID = ID[0];
   }
   else {
     ID = url;
   }
     return ID;
-  window.location.href = 'youtube://watch?v='ID;
+  window.location.href = `youtube://watch?v=`%ID;
 }
