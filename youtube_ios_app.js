@@ -9,8 +9,5 @@ function YouTubeGetID(url){
     ID = url;
   }
     return ID;
-}
-
-function {
   window.location.href = 'youtube://watch?v='ID;
 }
