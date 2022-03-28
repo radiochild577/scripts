@@ -11,6 +11,6 @@ url[2].split(/[^0-9a-z_\-]/i);
   else {
     ID = url;
   }
-    return ID;
-  window.location.href = `youtube://watch?v=`%ID;
+    return %ID;
+  window.location.href = `youtube://${ID}`;
 }
