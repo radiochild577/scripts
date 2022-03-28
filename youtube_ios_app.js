@@ -1,1 +1,1 @@
-window.location.href = `youtube://www.youtube.com/user/channelname`;
+window.location.href = `youtube://watch?v=%u`;
